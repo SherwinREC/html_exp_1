@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Tails Adoption</title>
+    <style>
+        /* Pet-themed background with white text */
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            /* Cute pet pattern background */
+            background-image: url('');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4); /* Dark overlay for text readability */
+            z-index: -1;
+        }
+
+        /* All content cards get white background for readability */
+        header, li, form, footer {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            color: #333;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        header { 
+            background: rgba(255,107,107,0.95); 
+            color: white;
+            text-align: center;
+        }
+
+        h1 { 
+            color: white; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 { 
+            color: #ff6b6b; 
+            border-bottom: 3px solid #ff8e8e;
+            padding-bottom: 10px;
+        }
+
+        h3 { 
+            color: #e53e3e; 
+            margin-bottom: 10px;
+        }
+
+        li { 
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            background: white;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(45deg, #48bb78, #38a169);
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover { 
+            background: linear-gradient(45deg, #38a169, #2f855a); 
+        }
+
+        footer {
+            background: rgba(45,55,72,0.95);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Tails Adoption</h1>
+        <p>At Happy Tails Adoption, we bridge loving hearts with loyal companions, transforming shelter pets into cherished family members for a lifetime of joy and unconditional love.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Choose a companion for You !!</h2>
+            <ul>
+                <li>
+                    <h3>Dog</h3>
+                    <p>Adopt a pup, unlock wagging joy and loyal adventures forever</p>
+                </li>
+                <li>
+                    <h3>Cat</h3>
+                    <p>Adopt a kitty, invite purring warmth and cozy companionship always</p>
+                </li>
+                <li>
+                    <h3>Fish - AquaElegance</h3>
+                    <p>Adopt a fish, spark shimmering grace and tranquil beauty forever</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to Get a Pet</h2>
+            <ol style="background: rgba(255,255,255,0.95); padding: 25px; border-radius: 15px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+                <li>Pick a pet from the list.</li>
+                <li>Fill in the form below.</li>
+                <li>Wait for us to say hi!</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Tell Us About You</h2>
+            <form action="" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="pet">Which Pet Do You Want?</label>
+                <select id="pet" name="pet" required>
+                    <option value="">Select a pet</option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Fish - AquaElegance</option>
+                </select>
+                <input type="submit" value="Send My Info">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Email us at: happytailsadopt@site.com</p>
+        <p>&copy; 2026 Happy Tails Adoption</p>
+        <p>Copyrighted by Sherwin John</p>
+    </footer>
+</body>
+</html>
